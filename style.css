@@ -230,7 +230,7 @@ h2 {
     font-family: 'Kanit';
     font-style: normal;
     font-weight: 400;
-    font-size: 22px;
+    font-size: 217px 33px;
     line-height: 33px;
     color: #94664C;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -238,4 +238,19 @@ h2 {
     padding: 5px;
     text-align: center;
     border-radius: 40px;
+}
+
+h4 {
+    background-color: #D9D9D9;
+    font-family: 'Kanit';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 217px 33px;
+    line-height: 33px;
+    color: #94664C;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 150px;
+    padding: 5px;
+    text-align: center;
+    
 }
