@@ -19,8 +19,8 @@
         <div class="header-content-wrapper">
             <div class="menu-title">Menu</div>
             <div class="header-buttons">
-                <button class="btn btn-secondary">Меню</button>
-                <button class="btn btn-primary">Кошик</button>
+                <button class="btn btn-secondary" id="menuBtn">Меню</button>
+                <button class="btn btn-primary btn-cart" id="cartBtn">Кошик  <span class="cart-counter">0</span></button>
                 <i class="bi bi-person btn-icon-pers"></i>
             </div>
         </div>
@@ -31,11 +31,11 @@
                 <li class="category-item active">
                     <div class="text-with-line">Всі напої<img src="img/Line 3.png"></div>
                 </li>
-                <li class="category-item">Кава</li>
-                <li class="category-item">Чай</li>
-                <li class="category-item">Коктелі</li>
-                <li class="category-item">Соки</li>
-                <li class="category-item">Додатково</li>
+                <li class="category-item"><a class="category-item" href="#coffee">Кава</a></li>
+                <li class="category-item"><a class="category-item" href="#tea">Чай</a></li>
+                <li class="category-item"><a class="category-item" href="#coctails">Лимонади</a></li>
+                <li class="category-item"><a class="category-item" href="#juice">Соки</a></li>
+                <li class="category-item"><a class="category-item" href="#addition">Додатково</a></li>
             </ul>
         </nav>
     </header>
@@ -43,10 +43,12 @@
 
     <main class="menu-conainer">
         <div class="divider"></div>
-        <h1>Кава</h1>
+        <h1 id="coffee">Кава</h1>
         <section class="products-section">
-            <div class="all-products">
-                <div class="product-card">
+            <div class="container-cards products-list all-products">
+            </div>
+            <!-- <div class="all-products">
+                 <div class="product-card">
                     <div class="card-image-box">
                         <img src="img/Американо.png" alt="Американо">
                     </div>
@@ -172,14 +174,16 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
         <div class="divider"></div>
-        <h1>Чай <br>(заварник)</h1>
+        <h1 id="tea">Чай <br>(заварник)</h1>
 
 
         <section class="products-section">
-            <div class="all-products">
+            <div class="container-cards products-list-2 all-products">
+            </div>
+            <!-- <div class="all-products">
                 <div class="product-card-2">
 
 
@@ -358,19 +362,21 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
 
 
         <div class="divider"></div>
-        <h1>Лимонади</h1>
+        <h1 id="coctails">Лимонади</h1>
 
 
         <section class="products-section">
-            <div class="all-products">
+            <div class="container-cards products-list-3 all-products">
+            </div>
+            <!-- <div class="all-products">
 
 
-                <div class="product-card">
+                <div class="product-card-6">
                     <div class="card-image-box">
                         <img src="img/Лимонад цитрусовый.png" alt="Лимонад цитрусовый">
                     </div>
@@ -386,7 +392,7 @@
                 </div>
 
 
-                <div class="product-card">
+                <div class="product-card-6">
                     <div class="card-image-box">
                         <img src="img/Лимонад яблоко.png" alt="Лимонад яблоко">
                     </div>
@@ -402,7 +408,7 @@
                 </div>
 
 
-                <div class="product-card">
+                <div class="product-card-6">
                     <div class="card-image-box">
                         <img src="img/Лимонад алое-грейпфрут.png" alt="Лимонад алое-грейпфрут">
                     </div>
@@ -418,7 +424,7 @@
                 </div>
 
 
-                <div class="product-card">
+                <div class="product-card-6">
                     <div class="card-image-box">
                         <img src="img/Лимонад дынф маракуйя вишня.png" alt="Лимонад дынф маракуйя вишня">
                     </div>
@@ -434,7 +440,7 @@
                 </div>
 
 
-                <div class="product-card">
+                <div class="product-card-6">
                     <div class="card-image-box">
                         <img src="img/Лимонад ананас-карамель.png" alt="Лимонад ананас-карамель">
                     </div>
@@ -450,7 +456,7 @@
                 </div>
 
 
-                <div class="product-card">
+                <div class="product-card-6">
                     <div class="card-image-box">
                         <img src="img/Лимонад ананас-базилик.png" alt="Лимонад ананас-базилик">
                     </div>
@@ -466,7 +472,7 @@
                 </div>
 
 
-                <div class="product-card">
+                <div class="product-card-6">
                     <div class="card-image-box">
                         <img src="img/пинаколада.png" alt="пинаколада">
                     </div>
@@ -482,7 +488,7 @@
                 </div>
 
 
-                <div class="product-card">
+                <div class="product-card-6">
                     <div class="card-image-box">
                         <img src="img/лимонад клубничный.png" alt="Лимонад полуничний">
                     </div>
@@ -496,17 +502,21 @@
                         </div>
                     </div>
                 </div>
-               
-            </div>
+
+
+            </div> -->
         </section>
         <div class="divider"></div>
-        <h1>Фреш та сік/вода</h1>
+        <h1 id="juice">Фреш та сік/вода</h1>
 
 
         <section class="products-section">
-            <div class="all-products">
-       
-                <div class="product-card-2">
+             <div class="container-cards products-list-4 all-products">
+            </div>
+            <!-- <div class="all-products">
+
+
+                <div class="product-card-7">
 
 
                     <div class="card-info-box">
@@ -521,7 +531,7 @@
                 </div>
 
 
-                <div class="product-card-2">
+                <div class="product-card-7">
 
 
                     <div class="card-info-box">
@@ -535,7 +545,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="product-card-2">
+                <div class="product-card-7">
 
 
                     <div class="card-info-box">
@@ -550,7 +560,7 @@
                 </div>
 
 
-                <div class="product-card-2">
+                <div class="product-card-7">
 
 
                     <div class="card-info-box">
@@ -563,14 +573,15 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
-
         <div class="divider"></div>
-        <h1>Додатково</h1>
+        <h1 id="addition">Додатково</h1>
         <h2>Сиропи</h2>
         <section class="products-section">
-            <div class="all-products-2">
+            <div class="container-cards products-list-5 all-products-2">
+            </div>
+            <!-- <div class="all-products-2">
                 <div class="product-card-3">
 
 
@@ -617,22 +628,27 @@
                 </div>
 
 
-            </div>
+            </div> -->
         </section>
+        <h2>Додатково до чаю</h2>
 
 
-                
-        
-        <h2>додатково до чаю</h2>
-        <h4>Фрукты и ягоды</h4>
-
-                <div class="product-card">
+        <section class="products-section">
+            <h3>Фрукты и ягоды</h3>
+            <div class="container-cards products-list-6 all-products-2">
+            </div>
+            <!-- <div class="all-products-2">
+                <div class="product-card-4">
 
 
                     <div class="card-info-box">
-                        <span class="product-name">Цитрусовые: Лимон или апельсин, свежие или в виде цедры.
-                            Ягоды: Малина, черная смородина, клубника, вишня или ягоды годжи.
-                            Сухофрукты</span>
+                        <span class="product-name">
+                            <ul>
+                                <li>Цитрусовые: Лимон или апельсин, свежие или в виде цедры.</li>
+                                <li>Ягоды: Малина, черная смородина, клубника, вишня или ягоды годжи.</li>
+                                <li>Сухофрукты</li>
+                            </ul>
+                        </span>
                         <div class="product-footer">
                             <span class="product-price">+15 ₴</span>
                             <div class="add-to-cart-btn">
@@ -641,15 +657,20 @@
                         </div>
                     </div>
                 </div>
-                
-                  <h4> Травы и цветы </h4>
-
-                <div class="product-card">
+-->
+                <h3> Травы и цветы </h3>
+                <div class="container-cards products-list-7 all-products-2">
+            </div>
+                <!-- <div class="product-card-4">
 
 
                     <div class="card-info-box">
-                        <span class="product-name">Свежие травы: Мята, чабрец, мелисса.
-                            Цветы: Ромашка, жасмин, роза, хризантема.</span>
+                        <span class="product-name">
+                            <ul>
+                                <li>Свежие травы: Мята, чабрец, мелисса.</li>
+                                <li>Цветы: Ромашка, жасмин, роза, хризантема.</li>
+                            </ul>
+                        </span>
                         <div class="product-footer">
                             <span class="product-price">+10 ₴</span>
                             <div class="add-to-cart-btn">
@@ -657,123 +678,46 @@
                             </div>
                         </div>
                     </div>
-                </div>
-                
-                <h4> Также предлагаем </h4>
-
-                <div class="product-card">
-
-
-                    <div class="card-info-box">
-                        <span class="product-name">Мед</span>
-                        <div class="product-footer">
-                            <span class="product-price">+15 ₴</span>
-                            <div class="add-to-cart-btn">
-                                <i class="fas fa-shopping-bag"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product-card">
-
-
-                    <div class="card-info-box">
-                        <span class="product-name">Орехи</span>
-                        <div class="product-footer">
-                            <span class="product-price">+15 ₴</span>
-                            <div class="add-to-cart-btn">
-                                <i class="fas fa-shopping-bag"></i>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="divider"></div>
-                     <h1>опис </h1>
-
-
-                <div class="product-card">
-
-
-                    <div class="card-info-box">
-                        <span class="product-name">Карамельный: Придает кофе богатый сладкий вкус, хорошо
-                            сочетается с молоком. </span>
-                        <div class="product-footer">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product-card">
-
-
-                    <div class="card-info-box">
-                        <span class="product-name">Ванильный: Классический и универсальный вариант, добавляет
-                            сладкие и кремовые нотки. </span>
-                        <div class="product-footer">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product-card">
-
-
-                    <div class="card-info-box">
-                        <span class="product-name">Шоколадный: Позволяет приготовить напитки типа мокко,
-                            особенно при использовании темного шоколада. </span>
-                        <div class="product-footer">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product-card">
-
-
-                    <div class="card-info-box">
-                        <span class="product-name">Ореховый: Например, лесной орех или миндаль, придает кофе
-                            глубокий землистый вкус. </span>
-                        <div class="product-footer">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product-card">
-
-
-                    <div class="card-info-box">
-                        <span class="product-name">Мятный: Придает напитку свежесть, хорошо сочетается с
-                            шоколадом. </span>
-                        <div class="product-footer">
-                        </div>
-                    </div>
-                </div>
-
-
-                <div class="product-card">
-
-
-                    <div class="card-info-box">
-                        <span class="product-name">Корица: Добавляет пряность и уютную сладость, особенно
-                            актуально в холодное время года. </span>
-                        <div class="product-footer">
-                        </div>
-                    </div>
-                </div>
-
-
-                 <div class="divider"></div>
-                 
+                </div> -->
+                <h3> Также предлагаем </h3>
+                <div class="container-cards products-list-8 all-products-2">
             </div>
+                <!-- <div class="product-card-4">
+
+
+                    <div class="card-info-box">
+                        <span class="product-name">
+                            <ul>
+                                <li>Мед</li>
+                                <li>Орехи</li>
+                            </ul>
+                        </span>
+                        <div class="product-footer">
+                            <span class="product-price">+15 ₴</span>
+                            <div class="add-to-cart-btn">
+                                <i class="fas fa-shopping-bag"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>  -->
+        </section>
+         <div class="divider"></div>
+        <h1>Опис</h1>
+        <section class="descr">
+           <div class="product-card-5"> <p>Карамельный: Придает кофе богатый сладкий вкус, хорошо сочетается с молоком. </p></div>
+           <div class="product-card-5"> <p>Ванильный: Классический и универсальный вариант, добавляет сладкие и кремовые нотки. </p></div>
+            <div class="product-card-5"><p>Шоколадный: Позволяет приготовить напитки типа мокко, особенно при использовании темного шоколада. </p></div>
+            <div class="product-card-5"><p>Ореховый: Например, лесной орех или миндаль, придает кофе глубокий землистый вкус. </p></div>
+            <div class="product-card-5"><p>Мятный: Придает напитку свежесть, хорошо сочетается с шоколадом. </p></div>
+            <div class="product-card-5"><p>Корица: Добавляет пряность и уютную сладость, особенно актуально в холодное время года. </p></div>
+
+
         </section>
     </main>
-
-
+ <script src="script.js"></script>
 </body>
-
-
 </html>
+

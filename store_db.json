@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Американо",
+        "image": "img/Американо.png",
+        "price": 50
+    },
+    {
+        "title": "Єспрессо",
+        "image": "img/Еспрессо.png",
+        "price": 30
+    },
+    {
+        "title": "Горячий шоколад",
+        "image": "img/Горячий шоколад.png",
+        "price": 60
+    },
+    {
+        "title": "Латте",
+        "image": "img/Латте.png",
+        "price": 90
+    },
+    {
+        "title": "Капучино",
+        "image": "img/Капучино.png",
+        "price": 70
+    },
+    {
+        "title": "Латте макиато",
+        "image": "img/Латте макиато.png",
+        "price": 95
+    },
+     {
+        "title": "Чорна кава",
+        "image": "img/Чорна кава.png",
+        "price": 30
+    },
+     {
+        "title": "Айс латте",
+        "image": "img/Айс латте.png",
+        "price": 100
+    }
+]
