@@ -1,3 +1,4 @@
+/* Заголовок */
 .cart h2 {
     text-align: center;
     font-size: 42px;
@@ -8,9 +9,8 @@
     background: #d8d6d4;
     margin-bottom: 30px;
 }
-
 .btn {
-    padding: 5px 20px;
+    padding:5px 20px;
     border: 1px solid #795548;
     border-radius: 5px;
     cursor: pointer;
@@ -24,7 +24,6 @@
     border-color: #795548;
     width: 130px;
 }
-
 .btn-secondary:hover {
     background-color: #fff;
     color: #795548;
@@ -33,12 +32,13 @@
 }
 
 .btn-primary {
-    background-color: #fff;
+    background-color: #795548;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
     width: 130px;
 }
+
 
 .btn-primary:hover {
     background-color: #795548;
@@ -60,6 +60,7 @@
     cursor: pointer;
 }
 
+/* Контейнер таблиці */
 .order-table {
     width: 100%;
     display: flex;
@@ -70,18 +71,21 @@
     gap: 20px;
 }
 
+/* Окрема строка */
 .order-row {
-width: 100%;
-display: flex;
-align-items: center;
+    width: 100%;
+    display: flex;
+    align-items: center;
 }
 
+/* Клітинки */
 .order-cell {
-display: flex;
-align-items: center;
-font-size: 22px;
+    display: flex;
+    align-items: center;
+    font-size: 22px;
 }
 
+/* Ширина колонок */
 .order-trash {
     width: 50px;
     justify-content: center;
@@ -103,10 +107,11 @@ font-size: 22px;
     justify-content: flex-end;
 }
 
+/* Іконки корзини */
 .delete-btn {
     background: none;
     border: none;
-    cursor:pointer;
+    cursor: pointer;
     color: #9b704f;
     font-size: 28px;
     transition: .2s ease;
@@ -117,11 +122,13 @@ font-size: 22px;
     color: #704a2e;
 }
 
+/* Заголовки колонок */
 .order-header .order-cell {
     font-size: 24px;
     font-weight: 600;
 }
 
+/* Поле кількості */
 .quantity-input {
     width: 60px;
     text-align: center;
@@ -130,8 +137,9 @@ font-size: 22px;
     background: transparent;
 }
 
+/* Підсумок */
 .order-footer {
-    font-size: 28x;
+    font-size: 28px;
     font-weight: 700;
     justify-content: flex-end;
 }
@@ -145,6 +153,7 @@ font-size: 22px;
     color: #000;
 }
 
+/* Вирівнювання іконок зліва */
 .order-table-wrapper {
     display: flex;
     width: 100%;
@@ -156,18 +165,17 @@ font-size: 22px;
     background: #d8d6d4;
 }
 
-#orderBtn {
+#orderBtn{
     text-align: center;
     padding: 20px 40px;
 }
-
-.make_order_btn {
+.make_order_btn{
     display: flex;
     justify-content: center;
     font-size: 30px;
-    margin-top: 10px;
+    margin-top: 100px;
 }
-
+/* Адаптив */
 @media (max-width: 768px) {
 
     .order-name {
